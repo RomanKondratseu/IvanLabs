@@ -10,11 +10,10 @@ public class LabOneTaskThree {
         System.out.println("width");
         Scanner console2 = new Scanner(System.in);
         int width = console2.nextInt();
-        square(length,width);
+        System.out.printf("Площадь прямоугольника = %s", square(length, width));
     }
+
     public static int square(int a , int b){
-        int s = a*b;
-        System.out.println("Площадь прямоугольника=" +s);
-        return s;
+        return a * b;
     }
 }
