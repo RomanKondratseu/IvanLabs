@@ -33,9 +33,13 @@ public class LabOneTaskFour {
   public static final String PATH = "src/main/resources/source.html";
 
   public static void generateFile() throws IOException {
-    File f = new File(PATH);
+    saveToFile(FILE_CONTENT, PATH);
+  }
+
+  public static void saveToFile(String content, String path) throws IOException {
+    File f = new File(path);
     BufferedWriter bw = new BufferedWriter(new FileWriter(f));
-    bw.write(FILE_CONTENT);
+    bw.write(content);
     bw.close();
   }
 }
